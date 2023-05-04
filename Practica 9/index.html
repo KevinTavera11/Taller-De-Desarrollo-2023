@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Animaciones</title>
+    <style>
+        body {
+            animation: colores 5s infinite;
+        }
+        @keyframes colores {
+            0% {
+                background: pink;
+            }
+            25% {
+                background: purple;
+            }
+            50% {
+                background: yellow;
+            }
+            100% {
+                background: green;
+            }
+        }
+
+        .cuadroBlanco{
+            background: white;
+            position: absolute;
+            animation: moverCuadro 5s infinite;
+        }
+
+        #cuadroBlanco{
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+
+        #cuadroBlanco2{
+            width: 100px;
+            height: 100px;
+            left: 200px;
+        }
+
+        #cuadroRojo{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            left: 350px;
+            animation: mueveRojo 3s infinite;
+        }
+
+        @keyframes mueveRojo{
+            0% {top: 0px}
+            25% {top: 200px;}
+            50% {top: 50px;}
+            100% {top: 100px;}
+        }
+
+        @keyframes moverCuadro{
+            from{
+                top: 0px;
+            }
+            to{
+                top: 200px;
+            }
+        }
+
+        #cuadroMulticolor{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 500px;
+            animation: moverMulticolor 1s infinite;
+        }
+
+        @keyframes moverMulticolor{
+            0% {top: 0px; left: 500px; background: gold;}
+            25% {top: 0px; left: 600px; background: cornflowerblue;}
+            50% {top: 50px; left: 600px; background: greenyellow;}
+            100% {top: 100px; left: 500px; background: rgb(237, 159, 24);}
+        }
+
+        #circulo{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 800px;
+            background: orange;
+            border-radius: 50%;
+            animation: crece 2s infinite;
+        }
+
+        @keyframes crece{
+            0% {top: 0px; width: 100px; height: 100px;}
+            100% {top: 100px; width: 500px; height: 500px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cuadroBlanco" class="cuadroBlanco"></div>
+    <div id="cuadroBlanco2" class="cuadroBlanco"></div>
+    <div id="cuadroRojo" ></div>
+    <div id="cuadroMulticolor" ></div>
+    <div id="circulo"></div>
+    <h1 data-aos="flip-left" style="font-size: 50px; margin-top: 200px;" >Hola este es un texto animado</h1>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

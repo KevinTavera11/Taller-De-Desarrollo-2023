@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title>
+    <style>
+        body{
+            margin: 0px;
+
+        }
+        #estatico{
+            position: static;
+            background-color: wheat;
+            width: 100px;
+            height: 100px;
+        }
+        #fijo{
+            position: fixed;
+            background-color: aquamarine;
+            right: 100px;
+            bottom: 100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        #absoluto{
+            position: absolute;
+            background-color: palevioletred;
+            left: 50px;
+            bottom: 50px;
+            width: 150px;
+            height: 150px;
+        }
+        #pegajoso{
+            position: sticky;
+            background-color: greenyellow;
+            top: 50px;
+            width: 100%;
+            height: 200px;
+            border: 3px solid green;
+        }
+        #relativo {
+            position: relative;
+            background-color: red;
+            left: 250px;
+            bottom: 250px;
+            width: 200px;
+            height: 200px;
+        }
+        #absoluto2{
+            position: absolute;
+            background-color: black;
+            width: 30px;
+            height: 30px;
+            left: 50px;
+            top: 50px;
+        }
+        #desbordado1{
+            background-color: cyan;
+            width: 200px;
+            height: 65px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        #desbordado2{
+            background-color: orchid;
+            width: 500px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedad position</h1>
+    <p>Tipos de position</p>
+    <ul>
+        <li>static</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>relative</li>
+        <li>sticky</li>
+    </ul>
+    <div id="estatico">estatico</div>
+    <div id="fijo">fixed</div> <!--se queda fijo en la pantalla-->
+    <div id="absoluto">absolut</div>
+    <div id="pegajoso">sticky</div>
+    <div id="relativo">
+        <div id="absoluto2"></div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1679948205100-b4a9270b23ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Astro">
+    
+    <div id="desbordado1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt optio facere dolorum! Adipisci, quas. Velit perferendis, corrupti beatae suscipit neque consectetur, expedita amet quasi, rerum aliquam nihil labore possimus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptatibus adipisci possimus et quos ex, quo sequi, ea obcaecati deserunt eos, nemo libero distinctio ut? Rem cupiditate praesentium at dolorem.
+    </div>
+
+    <div id="desbordado2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt optio facere dolorum! Adipisci, quas. Velit perferendis, corrupti beatae suscipit neque consectetur, expedita amet quasi, rerum aliquam nihil labore possimus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptatibus adipisci possimus et quos ex, quo sequi, ea obcaecati deserunt eos, nemo libero distinctio ut? Rem cupiditate praesentium at dolorem.
+    </div>
+</body>
+</html>
