@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 12</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: blue;
+            height: 500px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .flex-container div{
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px; 
+        }
+
+        .flex-container2{
+            display: flex;
+            background-color: red;
+            flex-direction: column-reverse;
+        }
+
+        .flex-container2 div{
+            background-color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 50px; 
+        }
+
+        .flex-container3{
+            display: flex;
+            flex-wrap: wrap;
+            height: 500px;
+            align-content: flex-start;
+            background-color: purple;
+        }
+
+        .flex-container3 div{
+            background-color: white;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="flex-container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+        <div class="flex-container2">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+        <div class="flex-container3">
+            <div>X</div>
+            <div>Y</div>
+            <div>Z</div>
+        </div>
+    </div>
+</body>
+</html>
