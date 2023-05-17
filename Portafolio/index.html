@@ -1,81 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
-    <title>PORTAFOLIO JYHD</title>
+    <title>Portafolio</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
-    <!-- SECCION INICIO -->
-    <section class="inicio" id="inicio">
-        <div class="contenido-seccion">
-            <header>
-                <div class="logo">
-                    LaSalle<span class="color"></span>
-                </div>
-            </header>
-            <div class="info">
-                <h1>YAHIR HERNÁNDEZ</h1>
-                <h2>ING. SOFTWARE Y SISTEMAS COMPUTACIONALES</h2>
-                <div class="redes">
-                    <a href="https://www.facebook.com/profile.php?id=100004282007327"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/yahirhddz_/"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://open.spotify.com/user/22iurs62jhqyblfgoc34sofyi?si=647203ab1adf4868"><i class="fa-brands fa-spotify"></i></a>
-                    <a href="https://readyplayerme-photobooth.s3.amazonaws.com/641658896cb6330c067bbe13/tGoavz.png?classId=d652c244-af6f-4f0e-8bfc-4fb5cd1efa99&assignmentId=6aedeaee-bff6-4741-ac3f-5876e3f10d2d&submissionId=8407c0de-8822-2b2c-099d-babf13f7fcd5"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+    
+    <!-- header desing -->
+
+    <header class="header">
+        <a href="#" class="logo">Kevin.</a>
+
+        <div class="bxbx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <!-- home section desing -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hola mi nombre es <span>Kevin Tavera</span></h1>
+            <div class="text-animate">
+                <h3>Frontend Developer</h3>
             </div>
-            <div class="foto">
-                <img src="FotoY.jpeg" alt="">
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit 
+                sit omnis corporis ut deserunt ipsam, tenetur, esse consequatur 
+                architecto sint ducimus dolores quia? Ipsam nostrum nihil nulla recusandae enim sit.</p>
+
+                <div class="btn-box">
+                    <a href="#" class="btn">Hire Me</a>
+                    <a href="#" class="btn">Let's Talk</a>
+                </div>
         </div>
     </section>
 
 
-    <!-- SECCION DETALLES PERSONALES -->
-    <section class="sobremi" id="sobremi">
-        <div class="contenido-seccion">
-            <h3>Detalles personales</h3>
-
-            <p class="especial">He aquí un intenso estudiante de Ingeniería en Software y Sistemas Computacionales</p>
-            <p> Portafolio personal de la materia 'Taller de Desarrollo basado en los Nuevos Paradigmas', impartida por el profesor Marco Antonio Hernández Alba en la Universidad LaSalle Bajío</p>
-
-            <div class="fila">
-                <div class="col">
-                    <a href="https://github.com/YahirHernandezz/taller-de-desarrollo212"><i class="fa-solid fa-code-branch"></i></a>
-                    <span class="titulo-detalle">GITHUB</span>
-                    <p>Repositorio en línea GitHub</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- SECCION CONTACTO -->
-    <section class="contacto" id="contacto">
-        <div class="contenido-seccion">
-            <h2 class="titulo-seccion">CONTACTO</h2>
-            <h3>Jared Yahir Hernández Delgado</h3>
-            <div class="fila">
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-phone"></i> Teléfono
-                    </h2>
-                    <span class="info-contacto">477-440-8294</span>
-                </div>
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-envelope"></i> Correo
-                    </h2>
-                    <span class="info-contacto">yahir16hdz@gmail.com</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
