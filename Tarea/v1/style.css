@@ -1,7 +1,7 @@
 /* Clase para aplicar un fondo con la imagen 'Imagen1.jpg' */
 .fondo1 {
     /* Establece la imagen de fondo y su posición */
-    background: url('.//Imagenes/Imagen1.jpg') no-repeat center center;
+    background: url('.//Imagen1.jpg') no-repeat center center;
     /* Asegura que la imagen de fondo cubra todo el elemento en Chrome y Safari */
     -webkit-background-size: cover;
     /* Asegura que la imagen de fondo cubra todo el elemento en Firefox */
@@ -14,7 +14,7 @@
 
 /* Clase para aplicar un fondo con la imagen 'imagen2.jpg' */
 .fondo2 {
-    background: url('.//Imagenes/imagen2.jpg') no-repeat center center;
+    background: url('.//imagen2.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,7 +23,7 @@
 
 /* Clase para aplicar un fondo con la imagen 'Imagen1.jpg' */
 .fondo3 {
-    background: url('.//Imagenes/Imagen1.jpg') no-repeat center center;
+    background: url('.//Imagen1.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,7 +32,7 @@
 
 /* Clase para aplicar un fondo con la imagen 'imagen2.jpg' */
 .fondo4 {
-    background: url('.//Imagenes/imagen2.jpg') no-repeat center center;
+    background: url('.//imagen2.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -41,7 +41,7 @@
 
 /* Clase para aplicar un fondo con la imagen 'Imagen2.jpg' */
 .fondo5 {
-    background: url('.//Imagenes/Imagen2.jpg') no-repeat center center;
+    background: url('.//imagen2.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,7 +50,7 @@
 
 /* Clase para aplicar un fondo con la imagen 'Imagen1.jpg' */
 .fondo6 {
-    background: url('.//Imagenes/Imagen1.jpg') no-repeat center center;
+    background: url('.//Imagen1.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

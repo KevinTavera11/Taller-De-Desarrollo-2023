@@ -1,0 +1,80 @@
+body {
+    background: url('.//fondo.jpg') no-repeat center center fixed; 
+    /* fixed significa que la imagen de fondo será fija con respecto a la ventana del navegador, 
+    en lugar de moverse junto con el contenido cuando se desplaza la página. */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.imagen-1 {
+    width: 100%; /* Esto hará que la imagen ocupe el 100% del ancho de su contenedor. */
+    height: auto; /* Esto mantendrá la proporción de la imagen. */
+    object-fit: cover; /* Esto hará que la imagen cubra todo el espacio disponible, recortándola si es necesario. */
+    border-radius: 5rem; /* Esto dará a la imagen bordes redondeados.*/
+}
+
+.imagen-2 {
+    width: 100%; 
+    height: 33.5%; 
+    object-fit: cover; 
+    border-radius: 5rem; 
+}
+
+.imagen-3 {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10rem; 
+}
+
+.imagen-4 {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10rem; 
+}
+
+.imagen-5 {
+    width: 100%; 
+    height: 78%; 
+    object-fit: cover; 
+    border-radius: 5rem; 
+}
+
+.imagen-7 {
+    width: 100%; 
+    height: 84%; 
+    object-fit: cover; 
+    border-radius: 7Rem; 
+}
+
+.imagen-8 {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 7rem; 
+}
+
+.imagen-9 {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 7rem; 
+}
+
+.imagen-10 {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5rem; 
+}
+
+.imagen-11 {
+    width: 100%; 
+    height: 96%; 
+    object-fit: cover; 
+    border-radius: 5rem; 
+}
