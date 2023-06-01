@@ -1,52 +1,54 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Popins', sans-serif;
+    margin: 0; /* Elimina los márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Cambia el modelo de caja para que el padding y el borde estén incluidos en el tamaño del elemento */
+    text-decoration: none; /* Elimina las decoraciones de texto (como subrayados) de todos los elementos */
+    border: none; /* Elimina los bordes de todos los elementos */
+    outline: none; /* Elimina los contornos de todos los elementos */
+    scroll-behavior: smooth; /* Hace que el desplazamiento entre los enlaces de anclaje sea suave en lugar de instantáneo */
+    font-family: 'Popins', sans-serif; /* Establece la fuente por defecto para todos los elementos */
 }
 
 :root{
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
+    --bg-color: #081b29; /* Define una variable de color de fondo para ser utilizada en el documento */
+    --second-bg-color: #112e42; /* Define una segunda variable de color de fondo */
+    --text-color: #ededed; /* Define una variable de color de texto */
+    --main-color: #00abf0; /* Define una variable de color principal */
 }
 
 html{
-    font-size: 62.5%;
-    overflow-x: hidden;
+    font-size: 62.5%; /* Establece el tamaño de fuente base para el documento (útil para el uso de rem) */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal en el documento */
 }
 
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: var(--bg-color); /* Establece el color de fondo del cuerpo utilizando la variable definida anteriormente */
+    color: var(--text-color); /* Establece el color del texto del cuerpo utilizando la variable definida anteriormente */
 }
 
+/* A partir de aquí, las reglas se aplican a clases específicas y utilizan muchas de las mismas propiedades descritas anteriormente. Las propiedades que no se han descrito anteriormente se comentarán en su primera aparición. */
+
 .header{
-    position: fixed;
+    position: fixed; /* Fija la posición del encabezado en la parte superior de la página */
     top: 0;
     left: 0;
     width: 100%;
     padding: 2rem 9%;
     background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    display: flex; /* Utiliza flexbox para organizar los elementos hijos del encabezado */
+    justify-content: space-between; /* Distribuye los elementos hijos del encabezado uniformemente a lo largo del eje horizontal */
+    align-items: center; /* Alinea los elementos hijos del encabezado a lo largo del eje vertical */
+    z-index: 100; /* Establece el nivel de apilamiento del encabezado para asegurarse de que se muestre por encima de otros elementos */
 }
 
 .logo{
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Establece el tamaño de fuente base para el documento (útil para el uso de rem) */
     color: var(--text-color);
     font-weight: 600;
 }
 
 .navbar a{
-    font-size: 1.7rem;
+    font-size: 1.7rem; /* Establece el tamaño de fuente base para el documento (útil para el uso de rem) */
     color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;

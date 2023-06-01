@@ -1,0 +1,536 @@
+/*
+Colores a usar en el proyecto
+{
+    color: #987964;
+    color: #d8af94;
+    color: #0f0f0f;
+    color: #b1a696;
+    color: #5b6061;
+    color: #5a473e;
+    color: #104b72;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sigmar', cursive;
+    overflow-x: hidden;
+    color: black;
+    scroll-behavior: smooth;
+}
+.cabecera-principal{
+    width: 100%;
+    height: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: white;
+}
+.cabecera-principal .logo{
+    margin-left: 5%;
+    margin: 0%;
+    height: 5vw;
+}
+.cabecera-principal .logo img{
+    height: 50px;
+    width: 50px;
+}
+.cabecera-principal .elementos-cabecera{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.cabecera-principal .elementos-cabecera a {
+    text-decoration: none;
+}
+.cabecera-principal .elementos-cabecera #anchor-lista{
+    color: black;
+}
+.lista-enlaces{
+    display: none;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 30%;
+    background-color: white;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.lista-enlaces li {
+    margin-top: 15%;
+    list-style: none;
+    font-size: 1rem;
+} 
+.lista-enlaces li:hover{
+    background-color: #c9b12da7;
+    color: white;
+}
+.lista-enlaces li a:hover{
+    color: white;
+}
+#anchor-lista:hover + .lista-enlaces{
+    display: block;
+    opacity: 1;
+}
+.lista-enlaces:hover{
+    display: block;
+    opacity: 1;
+}
+/*Seccion principal */
+.seccion-principal{
+    height: 100vh;
+    background-color: #c9b12da7;
+    display: grid;
+    place-items: center;
+}
+.seccion-principal .contenedor-imagen{
+    border-radius: 0px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+/*box-shadow:  5px 5px 7px #666666,
+             -5px -5px 7px #ffffff;*/
+    height: 90%;
+    width: 90%;
+    border-width: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 20px;
+}
+.seccion-principal .contenedor-imagen .div-imagen{
+    background-image: url(https://blog.cookingdepot.com/hubfs/Fotos%20Blog,%20Infograf%C3%ADa,%20Ecard%20Sprint%208/Blog%20%20no.%201/S8-Blog1-Featured.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.seccion-principal .contenedor-imagen .div-frase{
+    font-size: 2.5rem;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    margin-left: 30px;
+}
+/*Seccion productos*/
+.seccion-frase{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.seccion-frase svg{
+    grid-column: 3/1;
+}
+.seccion-frase img {
+    height: 600px;
+    height: 600px;
+    place-self: center;
+    position: relative;
+    top: 0px;
+    animation: ArribaAbajo ease-out 6s infinite;
+}
+@keyframes ArribaAbajo{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.seccion-frase h1{
+    place-self: right;
+    place-content: center;
+    display: grid;
+    font-size: 3rem;
+    margin-right: 5%;
+    text-align: left;
+    margin-left: 50px;
+}
+/*Seccion poke*/
+.seccion-poke{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 25px;
+    margin-right: 1%;
+    margin-left: 1%;
+    border-radius: 20px;
+}
+.seccion-poke div:hover{
+    transition: all 300ms;
+    transform: scale(1);
+    opacity: 0.5;
+}
+.seccion-poke .imagen1{
+    background-image: url(./img/poke3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+.seccion-poke .imagen2{
+    background-image: url(./img/poke\ 2.webp);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-row: 3;
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+.seccion-poke .imagen3{
+    background-image: url(./img/poke1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    grid-column: 2/4;
+    grid-row: 1/5;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+.seccion-poke .pokefrase{
+    background-color: #c9b12da7;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 1%;
+    text-decoration: none;
+}
+
+
+/*Seccion papas*/
+.seccion-papas{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-gap: 25px;
+    margin-top: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.seccion-papas div{
+    border-radius: 20px;
+}
+.seccion-papas div:hover{
+    transition: all 300ms;
+    transform: scale(1);
+    opacity: 0.5;
+}
+.seccion-papas .imagen1{
+    background-image: url(https://www.recetasjudias.com/wp-content/uploads/2016/08/Papas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/11;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.seccion-papas .imagen2{
+    background-image: url(https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/05/guarnicion-de-papas-con-ajo-y-mantequilla.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-column: 4/8;
+    grid-row: 1/4;
+    margin-top: 1%;
+}
+
+.seccion-papas .imagen4{
+    background-image: url(https://cope-cdnmed.agilecontent.com/resources/jpg/9/4/1593280224849.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 8/11;
+    grid-row: 1/4;
+    margin-top: 1%;
+}
+.seccion-papas .imagen5{
+    background-image: url(https://www.eltiempo.com/uploads/2021/04/15/6078c68c2f49b.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 8/4;
+    grid-row: 4/11;
+    margin-bottom: 1%;
+}
+.seccion-papas .imagen7{
+    background-color: #c9b12da7;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    grid-column: 8/11;
+    grid-row: 4;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.seccion-papas .imagen8{
+    background-image: url(https://recetas-mexicanas.com.mx/wp-content/uploads/2014/07/papas-chile-arbol.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 8/11;
+    grid-row: 5/11;
+}
+
+/*Seccion sashimi*/
+.seccion-sashimi{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    margin: 1%;
+    grid-gap: 25px;
+}
+.seccion-sashimi div{
+    border-radius: 20px;
+}
+.seccion-sashimi div:hover{
+    transition: all 300ms;
+    transform: scale(1);
+    opacity: 0.5;
+}
+.seccion-sashimi .imagen1{
+    background-image: url(https://sibeti.com/wp-content/uploads/2023/01/Cocina-japonesa-Como-hacer-la-receta-riginal-de-Sashimi-con-atun-y-salmon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/7;
+    grid-row: 1/9;
+}
+.seccion-sashimi .imagen3{
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2020/02/sashimi-c123df7.jpg?quality=90&resize=556,505);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 7/11;
+    grid-row: 1/11;
+}
+.seccion-sashimi .imagen4{
+    background-image: url(https://www.japonalternativo.com/wp-content/uploads/2020/12/receta-sashimi-de-at%C3%BAn.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/7;
+    grid-row: 9/13;
+}
+.seccion-sashimi .sashimiFrase{
+    background-color: #c9b12da7;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 20px;
+    grid-column: 7/11;
+    grid-row: 11/13;
+    text-decoration: none;
+}
+/*Seccion ensalada*/
+.seccion-ensalada{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    margin: 1%;
+    grid-gap: 25px;
+}
+.seccion-ensalada div{
+    border-radius: 20px;
+}
+.seccion-ensalada div:hover{
+    transition: all 300ms;
+    transform: scale(1);
+    opacity: 0.5;
+}
+.seccion-ensalada .imagen1{
+    background-image: url(https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/5;
+    grid-row: 5/11;
+}
+.seccion-ensalada .imagen2{
+    background-image: url(https://images.pexels.com/photos/1143754/pexels-photo-1143754.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5/11;
+    grid-row: 1/5;
+}
+.seccion-ensalada .imagen3{
+    background-image: url(https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+.seccion-ensalada .ensaladaFrase{
+    background-color: #c9b12da7;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    grid-column: 5/11;
+    grid-row: 5;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.seccion-ensalada .imagen5{
+    background-image: url(https://images.pexels.com/photos/1639556/pexels-photo-1639556.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5/8;
+    grid-row: 11/6;
+}
+.seccion-ensalada .imagen6{
+    background-image: url(https://images.pexels.com/photos/3872373/pexels-photo-3872373.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5/11;
+    grid-row: 6/11;
+}
+
+/*Seccion paella*/
+.seccion-paella{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    height: 100vh;
+    margin-top: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+    grid-gap: 25px;
+}
+.seccion-paella div{
+    border-radius: 20px;
+}
+.seccion-paella div:hover{
+    transition: all 300ms;
+    transform: scale(1);
+    opacity: 0.5;
+}
+.seccion-paella .imagen1{
+    background-image: url(https://www.vidactual.com/rcpmaker/wp-content/uploads/2020/10/Paella.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/5;
+    grid-row: 2/11;
+}
+.seccion-paella .imagen2{
+    background-image: url(https://blog.pepebar.com/wp-content/uploads/2017/04/como-hacer-paella-receta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 7/11;
+    grid-row: 1/11;
+}
+.seccion-paella .imagen3{
+    background-color: #c9b12da7;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    grid-column: 1/7;
+    grid-row: 1;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.seccion-paella .imagen4{
+    background-image: url(https://editorialtelevisa.brightspotcdn.com/dims4/default/787d13e/2147483647/strip/true/crop/1195x672+3+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2021%2F08%2Fpaella-paso-a-paso.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5/7;
+    grid-row: 2/6;
+}
+.seccion-paella .imagen5{
+    background-image: url(https://cdn7.kiwilimon.com/recetaimagen/37984/48369.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5/7;
+    grid-row: 6/11;
+}
+.seccion-locacion{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.seccion-locacion div{
+    display: grid;
+}
+.seccion-locacion div h1 {
+    display: grid;
+    place-content: center;
+}
+.seccion-locacion a{
+    display: grid;
+    place-content: center;
+    border: solid;
+    margin: 60px;
+    width: 224px;
+    place-self: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #c9b12da7;
+    border-style: none;
+    height: 50px;
+}
+.seccion-locacion a:hover{
+    transition: all 300ms;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.seccion-locacion svg{
+    grid-row: 3;
+}
+.seccion-carrusel{
+    height: 100vh;
+    background-color: #c9b12da7;
+    display: grid;
+}
+.seccion-carrusel h1{
+    display: grid;
+    font-size: 4rem;
+    text-align: center;
+}
+.seccion-carrusel .galeria{
+    display: flex;
+    width: 100%;
+    height: 75vh;
+}
+.seccion-carrusel .galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+}
+.seccion-carrusel .galeria img:hover{
+    width: 100%;
+    opacity: 1;
+    filter: contrast(120%);
+}

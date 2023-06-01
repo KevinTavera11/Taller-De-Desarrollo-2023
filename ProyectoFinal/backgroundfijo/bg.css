@@ -1,0 +1,48 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Seccion{
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.Seccion2{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    margin-top: 25px;
+    grid-gap: 25px;
+}
+.Seccion2 .div1{
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 1/8;
+    grid-row: 1/11;
+}
+.Seccion2 .div2{
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 8/11;
+    grid-row: 1/8;
+}
+.Seccion2 .div3{
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 8/11;
+    grid-row: 8/11;
+}

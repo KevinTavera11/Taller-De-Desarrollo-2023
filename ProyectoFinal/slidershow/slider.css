@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.frase-cabecera{
+    text-align: center;
+    background-color: #c9b12da7;
+    height: 15vh;
+    display: grid;
+    place-content: center;
+}
+.frase-cabecera .div-frase-cabecera{
+    height: 10vh;
+    width: 200vw;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 950px;
+    border-radius: 0px;
+}
+.frase-cabecera .div-frase-cabecera h1{
+  position: relative;
+  left: 0;
+  animation-name: move;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  overflow-y: hidden;
+}
+
+
+@keyframes move{
+    0%{
+        left: 0;
+        color: blue;
+    }
+    25%{
+        left: 25%;
+        color: brown;
+    }
+    50%{
+        left: 50%;
+        color: darkgoldenrod;
+    }
+    75%{
+        left: 75%;
+        color: darkgreen;
+    }
+    100%{
+        left: 100%;
+        color: hotpink;
+    }
+}
